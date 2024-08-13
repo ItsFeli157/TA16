@@ -1,66 +1,41 @@
-/* Estilo por defecto para pantallas grandes (1440px y mayores) */
-body {
-    background-color: red;
-    font-family: Arial, sans-serif;
-}
+/*Menores a 425px*/
 
-h1 {
-    text-align: center;
-    font-size: 32px;
+body {
+    background-color: lightblue;
 }
 
 p {
-    text-align: center;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
+    width: 100%;
 }
 
-/* Media query para pantallas medianas (768px a 1439px) */
-@media (max-width: 1439px) and (min-width: 768px) {
+@media (min-width: 426px) {
     body {
-        background-color: green;
+        background-color: gold;
     }
-
+    
     p {
         font-size: 18px;
     }
-
+    
     img {
         width: 70%;
     }
 }
 
-/* Media query para pantallas pequeñas (425px a 767px) */
-@media (max-width: 767px) and (min-width: 426px) {
+@media (min-width: 768px) {
     body {
-        background-color: blue;
+        background-color: lightgreen;
     }
-
+    
     p {
-        font-size: 14px;
+        font-size: 24px;
     }
-
+    
     img {
-        width: 100%;
-    }
-}
-
-/* Media query para pantallas muy pequeñas (425px y menores) */
-@media (max-width: 425px) {
-    body {
-        background-color: blue;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    img {
-        width: 100%;
+        width: 50%;
     }
 }
